@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/nik.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/monologue.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/monologue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/replica.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/replica.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/scenario.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.py" afterDir="false" />
@@ -91,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565788447374</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Realize player's choice">
+      <created>1565802122665</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565802122665</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,22 +118,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor scenario classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor scenario classes" />
+    <MESSAGE value="Realize player's choice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realize player's choice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scenario.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scenario.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
