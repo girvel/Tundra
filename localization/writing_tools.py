@@ -10,3 +10,4 @@ from core.scenario import scenario
 сценарий.сцена = сценарий.scene
 сценарий.играть = сценарий.play
 сценарий.замена = сценарий.replace
+сценарий.вариант = сценарий.choice

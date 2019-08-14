@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/monologue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/monologue.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/monologue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/scenario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,6 +84,14 @@
       <option name="presentableId" value="Default" />
       <updated>1565702593479</updated>
     </task>
+    <task id="LOCAL-00001" summary="Refactor scenario classes">
+      <created>1565788447374</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565788447374</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,8 +107,24 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor scenario classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor scenario classes" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scenario.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scenario.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -111,6 +136,7 @@
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="core.scenario.scenario" language="Python" />
+        <watch expression="self.current_monologue if self.current_choice_monologue is None else self.current_choice_monologue" language="Python" />
       </configuration>
     </watches-manager>
   </component>

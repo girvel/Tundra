@@ -7,18 +7,20 @@ from core.replica import Replica
 class Scenario:
     root_monologue = None
     current_monologue = None
+    current_choice_monologue = None
     names = []
     name = "Another one scenario"
 
     def scene(self, name):
-        new_monologue = Monologue()
+        new_monologue = Monologue(name)
 
         if self.root_monologue is None:
             self.root_monologue = new_monologue
         else:
-            self.current_monologue.replicas.append(new_monologue)
+            self.current_monologue.choices.append(new_monologue)
 
         self.current_monologue = new_monologue
+        self.current_choice_monologue = None
 
     def replace(self, shortcut, name):
         self.names.append((shortcut, name))
@@ -27,7 +29,12 @@ class Scenario:
         for n in self.names:
             text = text.replace(n[0], n[1])
 
-        self.current_monologue.replicas.append(Replica(name, text))
+        (self.current_monologue if self.current_choice_monologue is None else self.current_choice_monologue)\
+            .replicas.append(Replica(name, text))
+
+    def choice(self, text):
+        self.current_choice_monologue = Monologue(text)
+        self.current_monologue.choices.append((text, self.current_choice_monologue))
 
     def play(self):
         self.current_monologue = self.root_monologue
@@ -41,7 +48,7 @@ class Scenario:
                 break
 
             for i, v in enumerate(self.current_monologue.choices):
-                print(f'{i}. {v[0]}')
+                print(f'{i + 1}. {v[0]}')
 
             while True:
                 choice = input()
@@ -49,7 +56,7 @@ class Scenario:
                 if choice.isdigit():
                     choice = int(choice)
                     if 0 < choice <= len(self.current_monologue.choices):
-                        self.current_monologue = self.current_monologue.choices[choice]
+                        self.current_monologue = self.current_monologue.choices[choice - 1][1]
                         break
 
 
