@@ -57,7 +57,7 @@ class Scenario:
 
         while True:
             for replica in self.current_monologue.replicas:
-                print(f'{colored(replica.name, "red")}: {replica.text}', end='')
+                print(replica, end='')
                 input()
 
             if len(self.current_monologue.choices) == 0:
