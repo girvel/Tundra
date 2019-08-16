@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/modelling/scenario.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/writing/scenario_writer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/playing/fake_input.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/scenario_player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/character.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/writing/character.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/choice.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/modelling/choice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/lazy_goto.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/writing/lazy_goto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/lazy_replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/modelling/lazy_replace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/monologue.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/modelling/monologue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/replica.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/modelling/replica.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/scenario.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/modelling/scene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/playing/scenario_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/playing/scenario_player.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +30,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Console" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/playing" />
+      <recent name="$PROJECT_DIR$/core/modelling" />
+      <recent name="$PROJECT_DIR$/core/writing" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -144,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565923147601</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Split scenario.py to 3 files for writing, playing and containing; remove program.py">
+      <created>1565926077101</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565926077101</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +167,8 @@
     <MESSAGE value="Realize player's choice" />
     <MESSAGE value="Realize scenario goto" />
     <MESSAGE value="Replace tuples with Choice, LazyGoto and LazyReplace classes; change scenario syntax" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace tuples with Choice, LazyGoto and LazyReplace classes; change scenario syntax" />
+    <MESSAGE value="Split scenario.py to 3 files for writing, playing and containing; remove program.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Split scenario.py to 3 files for writing, playing and containing; remove program.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

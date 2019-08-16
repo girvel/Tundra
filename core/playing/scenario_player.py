@@ -1,6 +1,25 @@
+import platform
+import os
+from core.playing.fake_input import FakeInput
+
+
 class ScenarioPlayer:
     @staticmethod
+    def load_input():
+        data_path = {
+            'Linux': f'{os.getenv("HOME")}/.Tundra',
+            'Windows': f'{os.getenv("APPDATA")}/Tundra'
+        }[platform.system()]
+
+        try:
+            with open(f'{data_path}/saves/default.txt') as save_file:
+                return FakeInput([l[:-1] for l in save_file])
+        except FileNotFoundError:
+            return FakeInput([])
+
+    @staticmethod
     def play(scenario_):
+        input = ScenarioPlayer.load_input()
         current_monologue = scenario_.root_monologue
 
         while True:
