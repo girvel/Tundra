@@ -1,4 +1,4 @@
-from core.scenario import scenario
+from core.writing.scenario_writer import scenario_writer
 
 
 class Character:
@@ -6,4 +6,4 @@ class Character:
         self.name = name
   
     def __call__(self, text):
-        scenario.replica(self.name, text)
+        scenario_writer.replica(self.name, text)
