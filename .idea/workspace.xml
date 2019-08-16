@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/playing/fake_input.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/console/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/modelling/choice.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/modelling/choice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/playing/fake_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/playing/fake_input.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/playing/scenario_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/playing/scenario_player.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -146,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565926077101</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Realize saves">
+      <created>1565942148263</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565942148263</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,7 +177,8 @@
     <MESSAGE value="Realize scenario goto" />
     <MESSAGE value="Replace tuples with Choice, LazyGoto and LazyReplace classes; change scenario syntax" />
     <MESSAGE value="Split scenario.py to 3 files for writing, playing and containing; remove program.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Split scenario.py to 3 files for writing, playing and containing; remove program.py" />
+    <MESSAGE value="Realize saves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realize saves" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

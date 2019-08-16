@@ -1,25 +1,32 @@
 import platform
 import os
+
+from console.tools import request_choice
 from core.playing.fake_input import FakeInput
 
 
+def load_input():
+    saves_path = {
+        'Linux': f'{os.getenv("HOME")}/.Tundra',
+        'Windows': f'{os.getenv("APPDATA")}/Tundra'
+    }[platform.system()] + '/saves'
+
+    file = request_choice([path for path in os.listdir(saves_path) if path.endswith('.txt')])
+
+    try:
+        with open(f'{saves_path}/{file}') as save_file:
+            variants = [l[:-1] for l in save_file]
+    except FileNotFoundError:
+        variants = []
+
+    return FakeInput(variants)
+
+
 class ScenarioPlayer:
-    @staticmethod
-    def load_input():
-        data_path = {
-            'Linux': f'{os.getenv("HOME")}/.Tundra',
-            'Windows': f'{os.getenv("APPDATA")}/Tundra'
-        }[platform.system()]
+    def __init__(self):
+        self.input = load_input()
 
-        try:
-            with open(f'{data_path}/saves/default.txt') as save_file:
-                return FakeInput([l[:-1] for l in save_file])
-        except FileNotFoundError:
-            return FakeInput([])
-
-    @staticmethod
-    def play(scenario_):
-        input = ScenarioPlayer.load_input()
+    def play(self, scenario_):
         current_monologue = scenario_.root_monologue
 
         while True:
@@ -30,7 +37,7 @@ class ScenarioPlayer:
                     replica = replica.replace(r.shortcut, r.value)
 
                 print(replica, end='')
-                input()
+                self.input()
 
             if len(current_monologue.choices) == 0:
                 break
@@ -39,19 +46,7 @@ class ScenarioPlayer:
                 current_monologue = current_monologue.choices[0].next_monologue
                 continue
 
-            print()
-            for i, choice in enumerate(current_monologue.choices):
-                print(f'{i + 1}. {choice.text}')
-
-            while True:
-                choice = input()
-
-                if choice.isdigit():
-                    choice = int(choice) - 1
-                    if 0 <= choice < len(current_monologue.choices):
-                        break
-
-            current_monologue = current_monologue.choices[choice].next_monologue
+            current_monologue = request_choice(current_monologue.choices, input=self.input).next_monologue
             print()
 
 
