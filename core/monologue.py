@@ -2,7 +2,7 @@ class Monologue:
     def __init__(self, name="Monologue"):
         self.name = name
         self.replicas = []  # [ Replica* ]
-        self.choices = []  # [ (variant, next monologue)* ]
+        self.choices = []  # [ Choice* ]
 
-    def __str__(self):
+    def __repr__(self):
         return f'<Monologue {self.name}>'

@@ -7,8 +7,12 @@ from core.scenario import scenario
 
 сценарий = scenario
 
-сценарий.сцена = сценарий.scene
-сценарий.играть = сценарий.play
-сценарий.замена = сценарий.replace
-сценарий.вариант = сценарий.choice
-сценарий.переход = сценарий.goto
+сцена = scenario.scene
+играть = scenario.play
+замена = scenario.replace
+вариант = scenario.choice
+переход = scenario.goto
+
+
+def имя(значение):
+    scenario.name = значение

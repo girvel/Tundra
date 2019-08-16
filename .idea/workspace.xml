@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/nik.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/choice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lazy_goto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lazy_replace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/monologue.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/monologue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/replica.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/replica.py" afterDir="false" />
@@ -33,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -100,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565802122665</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Realize scenario goto">
+      <created>1565803506972</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565803506972</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,7 +128,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor scenario classes" />
     <MESSAGE value="Realize player's choice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realize player's choice" />
+    <MESSAGE value="Realize scenario goto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realize scenario goto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
