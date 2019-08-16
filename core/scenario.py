@@ -2,6 +2,7 @@ from termcolor import colored
 
 from core.monologue import Monologue
 from core.replica import Replica
+from core.scene import Scene
 
 
 class Scenario:
@@ -21,8 +22,9 @@ class Scenario:
                 r[0].choices.append(("", m))
         return m
 
-    def scene(self, name):
+    def scene(self, name, description=""):
         new_monologue = self.__create_monologue(name)
+        new_monologue.replicas.append(Scene(name, description))
 
         if self.root_monologue is None:
             self.root_monologue = new_monologue
@@ -46,9 +48,6 @@ class Scenario:
         self.replaces.append((shortcut, name))
 
     def replica(self, name, text):
-        for n in self.replaces:
-            text = text.replace(n[0], n[1])
-
         (self.current_monologue if self.current_choice_monologue is None else self.current_choice_monologue)\
             .replicas.append(Replica(name, text))
 
@@ -57,6 +56,11 @@ class Scenario:
 
         while True:
             for replica in self.current_monologue.replicas:
+                replica = str(replica)
+
+                for r in self.replaces:
+                    replica = replica.replace(r[0], r[1])
+
                 print(replica, end='')
                 input()
 
@@ -67,6 +71,7 @@ class Scenario:
                 self.current_monologue = self.current_monologue.choices[0][1]
                 continue
 
+            print()
             for i, v in enumerate(self.current_monologue.choices):
                 print(f'{i + 1}. {v[0]}')
 
@@ -76,8 +81,9 @@ class Scenario:
                 if choice.isdigit():
                     choice = int(choice)
                     if 0 < choice <= len(self.current_monologue.choices):
-                        self.current_monologue = self.current_monologue.choices[choice - 1][1]
                         break
+            self.current_monologue = self.current_monologue.choices[choice - 1][1]
+            print()
 
 
 scenario = Scenario()
