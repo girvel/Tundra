@@ -8,6 +8,7 @@ from core import io
 from core.io import *
 from core.replace import Replace
 
+
 replaces = []
 
 is_skipping = False
@@ -61,6 +62,9 @@ class GlobalData:
 
         with open(DATA_PATH, 'w') as data_file:
             data_file.write('\n'.join(new_content))
+
+    def __repr__(self):
+        return f'<GlobalData>'
 
 
 global_data = None
@@ -146,6 +150,9 @@ class Character:
 
     def __call__(self, text):
         phrase(f'{colored(self.name, "red")}: {text}')
+
+    def __repr__(self):
+        return f'<Character: name="{self.name}">'
 
 
 def checkpoint(*important_data):
