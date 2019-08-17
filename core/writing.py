@@ -83,7 +83,8 @@ def saving_choice():
     with open(f'{SAVES_FOLDER_PATH}/{choice_}') as save_file:
         variants = [l[:-1] for l in save_file]
 
-    io.input_line = FakeInput(variants)
+    global input_line
+    input_line = FakeInput(variants)
 
 
 def set_phrase_replace(shortcut, value):
