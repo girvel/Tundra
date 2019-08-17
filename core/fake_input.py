@@ -3,6 +3,10 @@ class FakeInput:
         self.saved_lines = saved_lines
         self.current_index = -1
 
+    def reset(self):
+        self.saved_lines = []
+        self.current_index = -1
+
     def __call__(self):
         self.current_index += 1
 

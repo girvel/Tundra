@@ -49,12 +49,4 @@ class GlobalData:
         return f'<GlobalData>'
 
 
-global_data = None
-
-
-def load_data():
-    global global_data
-    global_data = GlobalData()
-
-
-SAVES_FOLDER_PATH = f'{DATA_FOLDER_PATH}/saves'
+data = GlobalData()

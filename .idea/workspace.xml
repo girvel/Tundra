@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/core/writing.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/writing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecs/core/entity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecs/time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecs/world_clocks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/fake_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/fake_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/global_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/global_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/saving.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +39,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ecs" />
       <recent name="$PROJECT_DIR$/localization" />
       <recent name="$PROJECT_DIR$/core" />
       <recent name="$PROJECT_DIR$/core/playing" />
       <recent name="$PROJECT_DIR$/core/modelling" />
-      <recent name="$PROJECT_DIR$/core/writing" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -189,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566072405075</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Change project structure a bit">
+      <created>1566073265716</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1566073265716</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +231,8 @@
     <MESSAGE value="Realize autosaves" />
     <MESSAGE value="Realize падежи" />
     <MESSAGE value="Remove language.py, added __repr__ methods to all classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove language.py, added __repr__ methods to all classes" />
+    <MESSAGE value="Change project structure a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change project structure a bit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -229,11 +244,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="core.scenario.scenario" language="Python" />
-        <watch expression="self.current_monologue if self.current_choice_monologue is None else self.current_choice_monologue" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
