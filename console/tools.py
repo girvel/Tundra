@@ -1,18 +1,13 @@
-def request(string, input=input, print=print):
-    print(f'{string}: ', end='')
-    return input()
-
-
-def request_choice_index(variants, input=input, print=print):
+def request_choice_index(variants, input_line=input, print=print, enumeration_start=1, ):
     print()
     for i, variant in enumerate(variants):
-        print(f'{i + 1}. {variant}')
+        print(f'{i + enumeration_start}. {variant}')
 
     while True:
-        choice = input()
+        choice = input_line()
 
         if choice.isdigit():
-            choice = int(choice) - 1
+            choice = int(choice) - enumeration_start
             if 0 <= choice < len(variants):
                 break
 
@@ -20,5 +15,5 @@ def request_choice_index(variants, input=input, print=print):
     return choice
 
 
-def request_choice(variants, input=input, print=print):
-    return variants[request_choice_index(variants, input, print)]
+def request_choice(variants, input_line=input, print=print, enumeration_start=1):
+    return variants[request_choice_index(variants, input_line, print, enumeration_start)]

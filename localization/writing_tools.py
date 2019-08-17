@@ -1,24 +1,14 @@
-from console.tools import request
-from core.playing.scenario_player import scenario_player
-from core.writing.character import Character
-from core.modelling.scenario import scenario
-from core.writing.scenario_writer import scenario_writer
-
+from core.writing import \
+    scene, Character, request, set_phrase_replace, choice, goto, point, saving_choice, checkpoint, load_data
 
 Персонаж = Character
+
+загрузить_данные = load_data
+выбор_сохранения = saving_choice
+сцена = scene
 запрос = request
-
-сценарий = scenario
-
-сцена = scenario_writer.scene
-замена = scenario_writer.replace
-вариант = scenario_writer.choice
-переход = scenario_writer.goto
-
-
-def имя(значение):
-    scenario.name = значение
-
-
-def начать_игру():
-    scenario_player.play(scenario)
+замена = set_phrase_replace
+точка = point
+выбор = choice
+переход = goto
+сохранение = checkpoint
