@@ -1,5 +1,7 @@
 from core.writing import \
-    scene, Character, request, set_phrase_replace, choice, goto, point, saving_choice, checkpoint, load_data
+    scene, Character, request, set_phrase_replace, choice, goto, point
+from core.saving import saving_choice, checkpoint
+from core.global_data import load_data
 
 Персонаж = Character
 

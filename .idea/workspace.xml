@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/fake_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/fake_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/replace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/writing.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/writing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/language.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566059438385</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Remove language.py, added __repr__ methods to all classes">
+      <created>1566072405075</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1566072405075</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +216,8 @@
     <MESSAGE value="Change everything inside" />
     <MESSAGE value="Realize autosaves" />
     <MESSAGE value="Realize падежи" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realize падежи" />
+    <MESSAGE value="Remove language.py, added __repr__ methods to all classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove language.py, added __repr__ methods to all classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
