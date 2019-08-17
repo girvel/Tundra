@@ -13,6 +13,8 @@ replaces = []
 is_skipping = False
 skip_for = None
 
+is_loaded = False
+
 DATA_FOLDER_PATH = {
     'Linux': f'{os.getenv("HOME")}/.Tundra',
     'Windows': f'{os.getenv("APPDATA")}/Tundra'
@@ -79,9 +81,10 @@ def saving_choice():
 
     if choice_ == NOTHING_VARIANT:
         io.input_line = FakeInput([])
+        return
 
     with open(f'{SAVES_FOLDER_PATH}/{choice_}') as save_file:
-        variants = [l[:-1] for l in save_file]
+        variants = [l.replace('\n', '') for l in save_file]
 
     global input_line
     input_line = FakeInput(variants)
@@ -112,7 +115,7 @@ def scene(name, description):
 
 
 def request(text):
-    print(f'{text}: ')
+    print(f'{text} ')
     return input_line()
 
 
@@ -125,6 +128,9 @@ def point(text):
 
 def goto(point_text):
     global is_skipping, skip_for
+
+    if is_skipping:
+        return
 
     is_skipping = True
     skip_for = point_text
@@ -142,9 +148,23 @@ class Character:
         phrase(f'{colored(self.name, "red")}: {text}')
 
 
-def checkpoint():
+def checkpoint(*important_data):
     if is_skipping:
         return
 
-    with open(f'{SAVES_FOLDER_PATH}/autosave{global_data.autosaves_number}.txt', 'w') as file:
+    global is_loaded
+    if not is_loaded:
+        is_loaded = True
+        return
+
+    n = int(global_data.autosaves_number)
+    name = 'autosave{0}{1}{2}'.format(
+        n,
+        ": " if len(important_data) > 0 else "",
+        ", ".join(important_data)
+    )
+
+    global_data.autosaves_number = n + 1
+
+    with open(f'{SAVES_FOLDER_PATH}/{name}.txt', 'w') as file:
         file.write("\n".join(input_line.saved_lines))

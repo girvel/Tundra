@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/io.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/writing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/nik.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/nik.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization/language.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/console/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/modelling/choice.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/modelling/lazy_replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/replace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/modelling/monologue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/modelling/replica.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/modelling/scenario.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/modelling/scene.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/playing/fake_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/fake_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/playing/scenario_player.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/writing/character.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/writing/lazy_goto.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/writing/scenario_writer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/writing.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/writing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,6 +34,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/localization" />
       <recent name="$PROJECT_DIR$/core" />
       <recent name="$PROJECT_DIR$/core/playing" />
       <recent name="$PROJECT_DIR$/core/modelling" />
@@ -183,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566055629421</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Realize autosaves">
+      <created>1566055776772</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1566055776772</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,22 +202,11 @@
     <MESSAGE value="Realize saves" />
     <MESSAGE value="Realize saves loading by picking a file" />
     <MESSAGE value="Change everything inside" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change everything inside" />
+    <MESSAGE value="Realize autosaves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realize autosaves" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scenario.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/core/fake_input.py</url>
-          <line>2</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
