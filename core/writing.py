@@ -80,10 +80,22 @@ def read_book(book):
 
 
 def look_around(place):
-    variants = [
-        (Book, lambda b: f"Прочитать {b.title}", read_book)
-    ]
+    choice_ = ""
+    end_choice = f"Покинуть {place.name}"
 
-    variants = {v[1](item): lambda: v[2](item) for item in place.content for v in variants if isinstance(item, v[0])}
+    while choice_ != end_choice:
+        variants = [
+            (Book, lambda b: f"Прочитать {b.title}", read_book)
+        ]
 
-    variants[request_choice(list(variants.keys()))]()
+        variants = {
+            v[1](item): lambda: v[2](item)
+            for item in place.content
+            for v in variants
+            if isinstance(item, v[0])
+        }
+
+        variants[end_choice] = lambda: 0
+
+        choice_ = request_choice(list(variants.keys()))
+        variants[choice_]()

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/books/География южного края.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geography.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization/geography_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/writing.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/writing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecs/core/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecs/entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -203,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566073265716</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Realize places">
+      <created>1566132401273</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1566132401273</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +232,8 @@
     <MESSAGE value="Realize падежи" />
     <MESSAGE value="Remove language.py, added __repr__ methods to all classes" />
     <MESSAGE value="Change project structure a bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change project structure a bit" />
+    <MESSAGE value="Realize places" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realize places" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
