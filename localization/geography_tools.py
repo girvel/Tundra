@@ -1,8 +1,20 @@
-def Книга(имя, статичная=False):
-    return Book(имя, static=статичная)
+from ecs.entity import Entity
+from localization.game import clocks
 
 
-def Место(*содержание):
+def книга(имя, статичная=False):
+    components = [Book(имя)]
+
+    if статичная:
+        components.append(Item(имя, 1))
+
+    e = Entity(*components)
+
+    clocks.register_entity(e)
+    return e
+
+
+def место(*содержание):
     return Place(*содержание)
 
 
@@ -10,15 +22,17 @@ BOOKS_FOLDER = 'assets/books'
 
 
 class Book:
-    def __init__(self, title, static=False):
+    def __init__(self, title):
         self.title = title
-        self.static = static
 
         with open(f'{BOOKS_FOLDER}/{title}.txt') as file:
             self.content = [line.replace('\n', '') for line in file if line != '\n']
 
-        if not static:
-            raise NotImplementedError()
+
+class Item:
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
 
 
 class Place:

@@ -3,7 +3,7 @@ from termcolor import colored
 from console.tools import request_choice
 from core.io import *
 from core.replace import Replace
-from localization.geography_tools import Book
+from localization.geography_tools import Book, Item
 
 replaces = []
 
@@ -85,17 +85,19 @@ def look_around(place):
 
     while choice_ != end_choice:
         variants = [
-            (Book, lambda b: f"Прочитать {b.title}", read_book)
+            (Book, lambda b: f"Прочитать {b.title}", read_book),
+            (Item, lambda i: f'Взять {i.name} ({i.weight} кг)', lambda b: 0)
         ]
 
-        variants = {
-            v[1](item): lambda: v[2](item)
+        actions = {
+            v[1](item.get_component(v[0])): (v[2], item.get_component(v[0]))
             for item in place.content
             for v in variants
-            if isinstance(item, v[0])
+            if item.has_component(v[0])
         }
 
-        variants[end_choice] = lambda: 0
+        actions[end_choice] = (lambda x: 0, 0)
 
-        choice_ = request_choice(list(variants.keys()))
-        variants[choice_]()
+        choice_ = request_choice(list(actions.keys()))
+        a = actions[choice_]
+        a[0](a[1])
