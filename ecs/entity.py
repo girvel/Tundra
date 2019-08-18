@@ -1,5 +1,5 @@
 class Entity:
-    def __init__(self, components):
+    def __init__(self, *components):
         self.__components = components
 
     def get_component(self, type_):

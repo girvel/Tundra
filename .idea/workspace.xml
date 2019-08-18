@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ecs/core/entity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecs/time.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecs/world_clocks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/books/География южного края.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geography.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization/game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization/geography_tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/fake_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/fake_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/global_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/global_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/saving.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/writing.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/writing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecs/core/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecs/entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.py" afterDir="false" />
     </list>

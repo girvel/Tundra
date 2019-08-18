@@ -1,10 +1,8 @@
 from core.writing import \
-    scene, Character, request, set_phrase_replace, choice, goto, point
+    scene, Character, request, set_phrase_replace, choice, goto, point, look_around
 from core.saving import saving_choice, checkpoint
 from ecs.time import Time
-from ecs.world_clocks import WorldClocks
-
-clocks = WorldClocks(Time(minutes=1))
+from localization.game import clocks
 
 Персонаж = Character
 
@@ -16,6 +14,7 @@ clocks = WorldClocks(Time(minutes=1))
 выбор = choice
 переход = goto
 сохранение = checkpoint
+осмотреться = look_around
 
 
 def прошло(годы=0, месяцы=0, дни=0, часы=0, минуты=0, секунды=0):

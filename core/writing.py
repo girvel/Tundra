@@ -3,6 +3,7 @@ from termcolor import colored
 from console.tools import request_choice
 from core.io import *
 from core.replace import Replace
+from localization.geography_tools import Book
 
 replaces = []
 
@@ -69,3 +70,20 @@ class Character:
 
     def __repr__(self):
         return f'<Character: name="{self.name}">'
+
+
+def read_book(book):
+    phrase(book.title + "\n")
+
+    for paragraph in book.content:
+        phrase(paragraph + "\n")
+
+
+def look_around(place):
+    variants = [
+        (Book, lambda b: f"Прочитать {b.title}", read_book)
+    ]
+
+    variants = {v[1](item): lambda: v[2](item) for item in place.content for v in variants if isinstance(item, v[0])}
+
+    variants[request_choice(list(variants.keys()))]()

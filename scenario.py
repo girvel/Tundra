@@ -1,3 +1,4 @@
+from geography import *
 from localization.writing_tools import *
 
 
@@ -8,6 +9,7 @@ from localization.writing_tools import *
 
 
 # Characters
+
 ГГ = Персонаж(запрос("Bаше имя:"))
 Вождь = Персонаж("Вождь")
 Разум = Персонаж("Голос разума")
@@ -59,6 +61,8 @@ from localization.writing_tools import *
 
 Вождь("Таинство начнется в полночь. Поторопись.")
 Разум("Инсулин.")
+
+осмотреться(обитель_племени)
 
 переход("Глава I. Уход.")
 
