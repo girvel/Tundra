@@ -3,7 +3,9 @@ from termcolor import colored
 from console.tools import request_choice
 from core.io import *
 from core.replace import Replace
-from localization.geography_tools import Book, Item
+from game.inventory import Inventory
+from game.item import Item
+from game.book import Book
 
 replaces = []
 
@@ -79,18 +81,23 @@ def read_book(book):
         phrase(paragraph + "\n")
 
 
-def look_around(place):
+def __take_item(place, player, item):
+    place.content = [c for c in place.content if c.get_component(type(item)) is not item]
+    player.get_component(Inventory).content.append(item)
+
+
+def look_around(place, player):
     choice_ = ""
     end_choice = f"Покинуть {place.name}"
 
     while choice_ != end_choice:
         variants = [
-            (Book, lambda b: f"Прочитать {b.title}", read_book),
-            (Item, lambda i: f'Взять {i.name} ({i.weight} кг)', lambda b: 0)
+            (Book, (lambda b: f"Прочитать {b.title}"), (lambda pc, pr, b: read_book(b))),
+            (Item, (lambda i: f'Взять {i.name} ({i.weight} кг)'), __take_item)
         ]
 
         actions = {
-            v[1](item.get_component(v[0])): (v[2], item.get_component(v[0]))
+            v[1](item.get_component(v[0])): (v[2], place, player, item.get_component(v[0]))
             for item in place.content
             for v in variants
             if item.has_component(v[0])
@@ -100,4 +107,4 @@ def look_around(place):
 
         choice_ = request_choice(list(actions.keys()))
         a = actions[choice_]
-        a[0](a[1])
+        a[0](*a[1:])

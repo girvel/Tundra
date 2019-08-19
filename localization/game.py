@@ -1,5 +1,7 @@
+from ecs.entity import Entity
 from ecs.time import Time
 from ecs.world_clocks import WorldClocks
+from game.inventory import Inventory
 
 clocks = WorldClocks(
     Time(minutes=1),
@@ -8,3 +10,6 @@ clocks = WorldClocks(
     ]
 )
 
+player = Entity(
+    Inventory()
+)

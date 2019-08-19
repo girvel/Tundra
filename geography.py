@@ -6,6 +6,5 @@ from localization.geography_tools import книга, место
     "Обитель племени",
     [
         география_южного_края,
-
     ]
 )

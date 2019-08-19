@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/game/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/book.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/inventory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/place.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/writing.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/writing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecs/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecs/entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geography.py" beforeDir="false" afterPath="$PROJECT_DIR$/geography.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/localization/geography_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/geography_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
