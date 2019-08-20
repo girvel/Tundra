@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/scenario.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writing/global_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/global_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writing/saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/saving.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writing/scripting.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/scripting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -228,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566339035567</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Continue the plot">
+      <created>1566341405987</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1566341405987</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +263,8 @@
     <MESSAGE value="Realize infinity loop for places" />
     <MESSAGE value="Realize item collecting" />
     <MESSAGE value="Restructure project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructure project" />
+    <MESSAGE value="Continue the plot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Continue the plot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
