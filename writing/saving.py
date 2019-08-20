@@ -1,10 +1,9 @@
 import os
 
-from console.tools import request_choice
-from core.io import *
-from core.fake_input import FakeInput
-from core.global_data import data, DATA_FOLDER_PATH
-from core.writing import is_skipping
+from writing.scripting import is_skipping
+from writing.tools import request_choice
+from writing.fake_input import FakeInput
+from writing.global_data import data, DATA_FOLDER_PATH
 
 save_is_loaded = False
 

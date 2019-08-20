@@ -1,11 +1,9 @@
-from geography import *
+from game.geography import *
 from localization.writing_tools import *
 
 
 # Scenario
 # имя("Тундра")
-
-осмотреться(обитель_племени)
 
 выбор_сохранения()
 

@@ -1,4 +1,4 @@
-from core.fake_input import FakeInput
+from writing.fake_input import FakeInput
 
 input_line = FakeInput([])
 
