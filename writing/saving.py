@@ -2,8 +2,10 @@ import os
 
 from writing.scripting import is_skipping
 from writing.tools import request_choice
-from writing.fake_input import FakeInput
+from writing.io import input_line
 from writing.global_data import data, DATA_FOLDER_PATH
+
+
 
 save_is_loaded = False
 
@@ -11,8 +13,10 @@ SAVES_FOLDER_PATH = f'{DATA_FOLDER_PATH}/saves'
 
 
 def saving_choice():
-    global input_line
     NOTHING_VARIANT = "Не загружать сохранение"
+
+    if not os.path.isdir(SAVES_FOLDER_PATH):
+        os.mkdir(SAVES_FOLDER_PATH)
 
     choice_ = request_choice(
         [NOTHING_VARIANT] + [path for path in os.listdir(SAVES_FOLDER_PATH) if path.endswith('.txt')],
@@ -26,7 +30,8 @@ def saving_choice():
     with open(f'{SAVES_FOLDER_PATH}/{choice_}') as save_file:
         variants = [l.replace('\n', '') for l in save_file]
 
-    input_line = FakeInput(variants)
+    input_line.reset()
+    input_line.variants = variants
 
 
 def checkpoint(*important_data):

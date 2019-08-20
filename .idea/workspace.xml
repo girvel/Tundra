@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/framework/geography.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/writing/scripting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/fake_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/fake_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/global_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/global_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/io.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/io.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/replace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/saving.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/writing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inventory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/place.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/place.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geography.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/geography.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/geography_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/geography_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/scenario.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/scenario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writing/global_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/global_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writing/saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/saving.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writing/scripting.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/scripting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566208062675</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Restructure project">
+      <created>1566339035567</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1566339035567</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +260,8 @@
     <MESSAGE value="Realize places" />
     <MESSAGE value="Realize infinity loop for places" />
     <MESSAGE value="Realize item collecting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realize item collecting" />
+    <MESSAGE value="Restructure project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructure project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

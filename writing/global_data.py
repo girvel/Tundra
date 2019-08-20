@@ -10,6 +10,9 @@ DATA_PATH = f'{DATA_FOLDER_PATH}/global_data.ini'
 
 class GlobalData:
     def __init__(self):
+        if not os.path.isdir(DATA_FOLDER_PATH):
+            os.mkdir(DATA_FOLDER_PATH)
+
         if os.path.isfile(DATA_PATH):
             return
 

@@ -11,6 +11,9 @@ from writing.tools import request_choice
 
 replaces = []
 
+is_skipping = False
+skip_for = None
+
 
 def set_phrase_replace(shortcut, value):
     replaces.append(Replace(shortcut, value))
@@ -25,6 +28,12 @@ def phrase(text):
 
     print(text)
     input_line()
+
+
+def description(text):
+    print_line()
+    phrase(text)
+    print_line()
 
 
 def scene(name, description):
@@ -83,10 +92,6 @@ def look_around(place):
         a[0](*a[1:])
 
 
-is_skipping = False
-skip_for = None
-
-
 def request(text):
     print(f'{text} ')
     return input_line()
@@ -109,5 +114,7 @@ def goto(point_text):
     skip_for = point_text
 
 
-def choice(*variants):
-    goto(request_choice(variants, input_line, print_line))
+def goto_by_choice(*variants):
+    result = request_choice(variants, input_line, print_line)
+    goto(result)
+    return variants.index(result) + 1

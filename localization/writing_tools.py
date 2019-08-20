@@ -1,7 +1,10 @@
-from writing.scripting import set_phrase_replace, scene, Character, look_around, request, point, goto, choice
+from writing.scripting import set_phrase_replace, scene, Character, look_around, request, point, goto, goto_by_choice, \
+    phrase, \
+    description
 from writing.saving import saving_choice, checkpoint
 from ecs.time import Time
 from game.game import clocks, player
+from writing.tools import request_choice_index
 
 Персонаж = Character
 
@@ -10,10 +13,11 @@ from game.game import clocks, player
 запрос = request
 замена = set_phrase_replace
 точка = point
-выбор = choice
+выбор_перехода = goto_by_choice
 переход = goto
 сохранение = checkpoint
 осмотреться = look_around
+описание = description
 
 
 def прошло(годы=0, месяцы=0, дни=0, часы=0, минуты=0, секунды=0):
@@ -25,3 +29,7 @@ def прошло(годы=0, месяцы=0, дни=0, часы=0, минуты=
         minutes=минуты,
         seconds=секунды
     ))
+
+
+def выбор(*варианты):
+    return request_choice_index(варианты, enumeration_start=1) + 1
