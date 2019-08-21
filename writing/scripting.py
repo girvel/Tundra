@@ -3,6 +3,7 @@ from termcolor import colored
 from core.book import Book
 from core.inventory import Inventory
 from core.item import Item
+from core.place import Place
 from framework.game import player
 
 from writing.io import print, input_line, print_line
@@ -92,11 +93,17 @@ def look_around(place):
             if item.has_component(v[0])
         }
 
-        actions[end_choice] = (lambda x: 0, 0)
+        actions[end_choice] = (lambda: 0)
+
+        for connected in place.connected_places:
+            actions[f'Пойти в {connected.name}'] = (lambda x: 0, connected)
 
         choice_ = request_choice(list(actions.keys()))
         a = actions[choice_]
         a[0](*a[1:])
+
+        if isinstance(a[1], Place):
+            place = a[1]
 
 
 def request(text):
