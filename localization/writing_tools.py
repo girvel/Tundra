@@ -1,6 +1,5 @@
-from writing.scripting import set_phrase_replace, scene, Character, look_around, request, point, goto, goto_by_choice, \
-    phrase, \
-    description
+from writing.scripting import set_phrase_replace, scene, Character, look_around, request, point, goto, \
+    goto_by_choice, description, testing_mode
 from writing.saving import saving_choice, checkpoint
 from ecs.time import Time
 from game.game import clocks, player
@@ -8,6 +7,7 @@ from writing.tools import request_choice_index
 
 Персонаж = Character
 
+режим_тестирования = testing_mode
 выбор_сохранения = saving_choice
 сцена = scene
 запрос = request

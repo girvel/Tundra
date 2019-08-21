@@ -6,7 +6,6 @@ from writing.io import input_line
 from writing.global_data import data, DATA_FOLDER_PATH
 
 
-
 save_is_loaded = False
 
 SAVES_FOLDER_PATH = f'{DATA_FOLDER_PATH}/saves'
@@ -28,10 +27,11 @@ def saving_choice():
         return
 
     with open(f'{SAVES_FOLDER_PATH}/{choice_}') as save_file:
-        variants = [l.replace('\n', '') for l in save_file]
+        lines = [l.replace('\n', '') for l in save_file]
 
     input_line.reset()
-    input_line.variants = variants
+    input_line.saved_lines = lines
+    save_is_loaded = True
 
 
 def checkpoint(*important_data):
@@ -39,8 +39,8 @@ def checkpoint(*important_data):
         return
 
     global save_is_loaded
-    if not save_is_loaded:
-        save_is_loaded = True
+    if save_is_loaded:
+        save_is_loaded = False
         return
 
     n = int(data.autosaves_number)

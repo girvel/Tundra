@@ -27,3 +27,6 @@ class Time:
 
     def __floordiv__(self, other):
         return int(self) // int(other)
+
+    def __repr__(self):
+        return f'<Time: {self.years}.{self.months}.{self.days} {self.hours}:{self.minutes}:{self.seconds}>'

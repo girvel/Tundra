@@ -11,8 +11,14 @@ from writing.tools import request_choice
 
 replaces = []
 
+testing = False
 is_skipping = False
 skip_for = None
+
+
+def testing_mode():
+    global testing
+    testing = True
 
 
 def set_phrase_replace(shortcut, value):
@@ -27,7 +33,8 @@ def phrase(text):
         text = text.replace(replace.shortcut, replace.value)
 
     print(text)
-    input_line()
+
+    (print_line if testing else input_line)()
 
 
 def description(text):

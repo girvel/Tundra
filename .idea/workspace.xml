@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecs/time.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecs/time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/scenario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writing/fake_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/fake_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writing/saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/saving.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writing/scripting.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/scripting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -20,4 +20,5 @@ class FakeInput:
         return current_line
 
     def __repr__(self):
-        return f'<FakeInput: saved {len(self.saved_lines)} lines, last line is {self.saved_lines[self.current_index]}>'
+        return f'<FakeInput: saved {len(self.saved_lines)} lines, ' \
+               f'last line is "{self.saved_lines[self.current_index]}">'
