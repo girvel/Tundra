@@ -3,7 +3,7 @@ from termcolor import colored
 from core.book import Book
 from core.inventory import Inventory
 from core.item import Item
-from game.game import player
+from framework.game import player
 
 from writing.io import print, input_line, print_line
 from writing.replace import Replace

@@ -1,6 +1,9 @@
 def request_choice_index(variants, input_line=input, print=print, enumeration_start=1, ):
     print()
-    for i, variant in enumerate(variants):
+    variants = [v if not isinstance(v, tuple) else (v[1] if v[0] else None) for v in variants]
+    output_variants = [v for v in variants if v is not None]
+
+    for i, variant in enumerate(output_variants):
         print(f'{i + enumeration_start}. {variant}')
 
     while True:
@@ -8,11 +11,12 @@ def request_choice_index(variants, input_line=input, print=print, enumeration_st
 
         if choice.isdigit():
             choice = int(choice) - enumeration_start
-            if 0 <= choice < len(variants):
+            if 0 <= choice < len(output_variants):
+                choice = output_variants[choice]
                 break
 
     print()
-    return choice
+    return variants.index(choice)
 
 
 def request_choice(variants, input_line=input, print=print, enumeration_start=1):

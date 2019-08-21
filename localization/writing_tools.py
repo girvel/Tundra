@@ -2,7 +2,7 @@ from writing.scripting import set_phrase_replace, scene, Character, look_around,
     goto_by_choice, description, testing_mode
 from writing.saving import saving_choice, checkpoint
 from ecs.time import Time
-from game.game import clocks, player
+from framework.game import clocks
 from writing.tools import request_choice_index
 
 Персонаж = Character
@@ -18,6 +18,9 @@ from writing.tools import request_choice_index
 сохранение = checkpoint
 осмотреться = look_around
 описание = description
+
+Истина = True
+Ложь = False
 
 
 def прошло(годы=0, месяцы=0, дни=0, часы=0, минуты=0, секунды=0):

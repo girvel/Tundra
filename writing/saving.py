@@ -31,6 +31,8 @@ def saving_choice():
 
     input_line.reset()
     input_line.saved_lines = lines
+
+    global save_is_loaded
     save_is_loaded = True
 
 
