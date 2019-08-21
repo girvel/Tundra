@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/framework/items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-install.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inventory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/geography.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/framework/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/geography.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/geography.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/scenario.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/geography_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/items_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/writing_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/writing_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writing/saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/saving.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writing/scripting.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/scripting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writing/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/tools.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566376814950</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Write fight; add function has_item">
+      <created>1566387926062</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1566387926062</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +283,8 @@
     <MESSAGE value="Restructure project" />
     <MESSAGE value="Continue the plot" />
     <MESSAGE value="Add testing mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add testing mode" />
+    <MESSAGE value="Write fight; add function has_item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Write fight; add function has_item" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
