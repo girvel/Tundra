@@ -16,7 +16,7 @@ def has_item(item_, entity=None):
     if entity is None:
         entity = player
 
-    return any(i == item_.get_component(Item) for i in entity.get_component(Inventory).content)
+    return any(i == item_.item for i in entity.inventory.content)
 
 
 def book(name, static=False):
@@ -30,3 +30,6 @@ def book(name, static=False):
 
 def item(name, weight):
     return __new_entity(Item(name, weight))
+
+
+# def npc()

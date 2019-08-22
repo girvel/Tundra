@@ -1,5 +1,5 @@
 from core.place import Place
-from framework.items import book, item, has_item
+from framework.entities import book, item, has_item
 
 Место = Place
 предмет = item

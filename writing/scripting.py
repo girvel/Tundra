@@ -72,8 +72,8 @@ def read_book(book):
 
 
 def __take_item(place, player, item):
-    place.content = [c for c in place.content if c.get_component(type(item)) is not item]
-    player.get_component(Inventory).content.append(item)
+    place.content = [c for c in place.content if c.item is not item]
+    player.inventory.content.append(item)
 
 
 def look_around(place):
