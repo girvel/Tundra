@@ -7,4 +7,5 @@ setup(
     author_email="widauka@ya.ru",
     description="Simple text quest",
     url="https://github.com/girvel/Tundra",
+    requires=['termcolor'],
 )

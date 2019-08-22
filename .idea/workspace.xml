@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5d0fba-376f-4174-8cb9-8e7384da688b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/interaction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecs/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecs/entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/framework/entities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/scenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/scenario.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization/items_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/localization/items_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/place.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/place.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Tundra-0.1.linux-x86_64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Tundra-0.1.linux-x86_64.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/framework/entities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/geography.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/geography.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/writing/scripting.py" beforeDir="false" afterPath="$PROJECT_DIR$/writing/scripting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -264,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566422071775</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Realize getting component as attribute">
+      <created>1566470273812</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1566470273812</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +310,8 @@
     <MESSAGE value="Write fight; add function has_item" />
     <MESSAGE value="Try to create built distribution" />
     <MESSAGE value="Realize walking between places" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realize walking between places" />
+    <MESSAGE value="Realize getting component as attribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realize getting component as attribute" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

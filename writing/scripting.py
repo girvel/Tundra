@@ -1,7 +1,6 @@
 from termcolor import colored
 
 from core.book import Book
-from core.inventory import Inventory
 from core.item import Item
 from core.place import Place
 from framework.game import player
@@ -72,37 +71,42 @@ def read_book(book):
 
 
 def __take_item(place, player, item):
-    place.content = [c for c in place.content if c.item is not item]
+    place.content = [c for c in place.content if c is not item]
     player.inventory.content.append(item)
 
 
 def look_around(place):
     choice_ = ""
-    end_choice = f"Покинуть {place.name}"
+    end_choice = "\0"
+
+    variants = [
+        (Book, (lambda b: f"Прочитать {b.title}"), (lambda pc, pr, e: read_book(e.book))),
+        (Item, (lambda i: f'Взять {i.name} ({i.weight} кг)'), __take_item)
+    ]
 
     while choice_ != end_choice:
-        variants = [
-            (Book, (lambda b: f"Прочитать {b.title}"), (lambda pc, pr, b: read_book(b))),
-            (Item, (lambda i: f'Взять {i.name} ({i.weight} кг)'), __take_item)
-        ]
+        if not place.explored:
+            description(place.description)
+            place.explored = True
 
         actions = {
-            v[1](item.get_component(v[0])): (v[2], place, player, item.get_component(v[0]))
-            for item in place.content
+            v[1](entity.get_component(v[0])): (v[2], place, player, entity)
+            for entity in place.content
             for v in variants
-            if item.has_component(v[0])
+            if entity.has_component(v[0])
         }
-
-        actions[end_choice] = (lambda: 0)
 
         for connected in place.connected_places:
             actions[f'Пойти в {connected.name}'] = (lambda x: 0, connected)
+
+        end_choice = f"Покинуть {place.name}"
+        actions[end_choice] = (lambda: 0, )
 
         choice_ = request_choice(list(actions.keys()))
         a = actions[choice_]
         a[0](*a[1:])
 
-        if isinstance(a[1], Place):
+        if len(a) == 2 and isinstance(a[1], Place):
             place = a[1]
 
 

@@ -16,7 +16,7 @@ def has_item(item_, entity=None):
     if entity is None:
         entity = player
 
-    return any(i == item_.item for i in entity.inventory.content)
+    return any(i == item_ for i in entity.inventory.content)
 
 
 def book(name, static=False):
